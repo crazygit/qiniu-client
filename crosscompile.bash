@@ -5,10 +5,18 @@
 
 # support functions for go cross compilation
 
-# 交叉编译
+# 交叉编译生成客户端, 使用请参考
 #
 # http://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go
+# 
 #
+# 具体步骤:
+#
+# $ cd $GOROOT/src && ./all.bash
+# $ source crosscompile.bash
+# $ go-crosscompile-build-all
+#
+
 
 type setopt >/dev/null 2>&1 && setopt shwordsplit
 PLATFORMS="darwin/386 darwin/amd64 freebsd/386 freebsd/amd64 freebsd/arm linux/386 linux/amd64 linux/arm windows/386 windows/amd64 openbsd/386 openbsd/amd64"

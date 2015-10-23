@@ -37,7 +37,7 @@ Options：
 
 func main() {
 	var key string
-	flag.StringVar(&key, "key", "", "The key of upload file")
+	flag.StringVar(&key, "k", "", "The key of upload file")
 	flag.Parse()
 	filename := flag.Arg(0)
 	if filename == "" {
